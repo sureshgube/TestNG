@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" verbose='1'>
+
+<parameter name="browser" value="firefox"></parameter>
+<parameter name="URL" value="https://www.google.com"></parameter>
+
+  <test thread-count="1" name="Regression Test">
+    <classes>
+      <class name="foodDelivery.Zomato"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test thread-count="1" name="Automation Test">
+		<classes>
+      <class name="foodDelivery.Swiggy"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test thread-count="1" name="Smoke Test">
+
+	<classes>
+      <class name="groceryDelivery.Blinkit"/>
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
+
+
